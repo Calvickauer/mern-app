@@ -10,8 +10,9 @@
 const express = require('express');
 const app = express();
 
-app.get('/hello', (req, res) => {
+app.get('/api/register', (req, res) => {
     res.send('Hello World!')
+    console.log(req.body)
 })
 
 app.listen(2500, () => {
